@@ -39,7 +39,6 @@ function Generate()
 
 function Show(data)
 {
-    console.log(data);
     identity = data;
     let random = Random();
     var image = document.getElementById("imge");
@@ -54,7 +53,7 @@ function Show(data)
     }
     image.src = person.img;
     Name.innerHTML = "Name: " + person.name + "<br> Surname: " + person.surname + "<br> Email: " + person.email.replace("example.com", "gmail.com") + "<br> Password:" + person.password;
-    console.log(lang)
+    
 
 }
 
@@ -62,6 +61,7 @@ function Show(data)
 function Random()
 {
     return Math.floor(Math.random() * 100);
+    
 }
 
 function ChangeLanguage(country)
